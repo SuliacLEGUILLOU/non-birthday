@@ -1,0 +1,68 @@
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 2em;
+    margin-top: 1em;
+    font-family: monospace;
+    font-size: large;
+}
+
+.site-header h1, h4 {
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main section {
+    flex-direction: column;
+    min-width: 50%;
+}
+
+main section section {
+    padding: 10px;
+}
+
+.main { /* TODO This name is bad*/
+    border: solid 1px black;
+}
+
+section header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border: 1px dotted gray;
+    padding: 5px;
+    min-height: 2em;
+    align-items: center;
+}
+
+li {
+    font-size: larger;
+}
+
+
+@media only screen 
+and (max-device-width : 768px) {
+    /*
+    TODO:
+    - Display return button
+    - Wrap element nicely
+    - Update element size to be full screen
+    */
+    main {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    main section {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weird birthday</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+        <script type="text/javascript" src="./index.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <!-- <link rel="stylesheet" href="./style.debug.css"> -->
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Weird birthday</h1>
+            <i>There is always a reason to celebrate</i>
+        </header>
+        <main>
+            <section class="query-area main">
+                <header role="search" id="search-area">
+                    <input id="date" type="date" value="1991-01-01">
+                    <button id="button" onclick="launchSearch()">Search for birthday</button>
+                </header>
+                <section role="listitem">
+                    <h4>history</h4>
+                    <ul id="history">
+                    </ul>
+                </section>
+            </section>
+            <section role="result" class="main">
+                <header>Results</header>
+                <section>
+                    <ul id="result">
+                        <li>Next birthday: <span id="next_bd"></span></li>
+                        <li>next prime birthday: <span id="prime_day_bd"></span></li>
+                        <li>Your timestamp day (1234567890 seconds): <span id="timestamp_day"></span></li>
+                        <!-- <li>next one piece birthday: <span id="onepiece_bd"></span></li> -->
+                    </ul>
+                </section>
+                <section>
+                    TODO: export section
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>With love from a weirdo commity</p>
+            <p>Maybe find us on mastodon or something</p>
+        </footer>
+    </body>
+</html>
