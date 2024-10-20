@@ -59,7 +59,11 @@ function applyResult(date){
     for (const id in nextFunction) {
         e = getElement(id)
 
-        e.innerHTML = nextFunction[id](now, date).toLocaleString()
+        e.innerHTML = nextFunction[id](now, date).toLocaleString({
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        })
     }
 }
 
